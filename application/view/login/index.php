@@ -14,7 +14,7 @@
                     <input type="password" name="user_password" placeholder="Password" required />
                     <label for="set_remember_me_cookie" class="remember-me-label">
                         <input type="checkbox" name="set_remember_me_cookie" class="remember-me-checkbox" />
-                        Remember me for 2 weeks
+                        Remember me for 2 weeks si j'insère je vois le truc
                     </label>
                     <!-- when a user navigates to a page that's only accessible for logged a logged-in user, then
                          the user is sent to this page here, also having the page he/she came from in the URL parameter
