@@ -22,20 +22,22 @@
             <header>
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="index.php" class="brand-logo">Webloc</a>
+                        <a href="index.php" class="brand-logo hide-on-med-and-down">Webloc</a>
                         
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <ul id="nav-mobile" class="right ">
                             <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?> >
                                 <a href="<?php echo Config::get('URL'); ?>index/index">
                                     Accueil
                                 </a>
                             </li>
-                                
-                                <!-- <li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
+
+                                <!--
+                                <li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
                                     <a href="<?php echo Config::get('URL'); ?>profile/index">
                                         Profiles
                                     </a>
-                                </li> -->
+                                </li>
+                            -->
                                 <?php if (Session::userIsLoggedIn()) { ?>
                                     <li <?php if (View::checkForActiveController($filename, "dashboard")) { echo ' class="active" '; } ?> >
                                         <a href="<?php echo Config::get('URL'); ?>dashboard/index">
@@ -51,12 +53,12 @@
                                     <!-- for not logged in users -->
                                     <li <?php if (View::checkForActiveControllerAndAction($filename, "login/index")) { echo ' class="active" '; } ?> >
                                         <a href="<?php echo Config::get('URL'); ?>login/index">
-                                            Login
+                                            Connexion
                                         </a>
                                     </li>
                                     <li <?php if (View::checkForActiveControllerAndAction($filename, "register/index")) { echo ' class="active" '; } ?> >
                                         <a href="<?php echo Config::get('URL'); ?>register/index">
-                                            Register
+                                            Inscription
                                         </a>
                                     </li>
                                 <?php } ?>

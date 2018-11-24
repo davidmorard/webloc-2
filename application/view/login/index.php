@@ -8,14 +8,13 @@
 
 			<!-- login box on left side -->
 			<div>
-				<h2>Identifiez-vous</h2>
+				<h3>Identifiez-vous</h3>
 				<div>
 					<form action="<?php echo Config::get('URL'); ?>login/login" method="post">
 						<div class="row">
 							<div class="col s12">
 								<div class="row">
 									<div class="input-field col s12">
-										<i class="material-icons prefix">t</i>
 										<input type="text" name="user_name" placeholder="Pseudo ou email" required class="autocomplete" />
 										<label for="autocomplete-input"></label>
 									</div>
@@ -27,26 +26,20 @@
 							<div class="col s12">
 								<div class="row">
 									<div class="input-field col s12">
-										<i class="material-icons prefix">t</i>
 										<input type="password" name="user_password" placeholder="Mot de passe" required />
 										<label for="autocomplete-input"></label>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="right-align">
 
-
-
-
-
-
-
-						
+						 <!-- 
 						<label for="set_remember_me_cookie">
 							<input type="checkbox" name="set_remember_me_cookie"/>
 							Se souvenir de moi pendant 2 semaines
 						</label>
-                            <!-- when a user navigates to a page that's only accessible for logged a logged-in user, then
+                           when a user navigates to a page that's only accessible for logged a logged-in user, then
                                  the user is sent to this page here, also having the page he/she came from in the URL parameter
                                  (have a look). This "where did you came from" value is put into this form to sent the user back
                                  there after being logged in successfully.
@@ -62,24 +55,35 @@
         							3. http://stackoverflow.com/questions/13667437/how-to-add-csrf-token-to-login-form?lq=1
         						-->
         						<input type="hidden" name="csrf_token" value="<?= Csrf::makeToken(); ?>" />
-        						<input type="submit" value="Log in"/>
-        					</form>
-        				</div>
-        				<div>
-        					<a href="<?php echo Config::get('URL'); ?>login/requestPasswordReset">I forgot my password</a>
-        				</div>
+        						<input class="waves-effect waves-light btn" type="submit" value="Validez"/>
+        					</div>
+        				</form>
         			</div>
-
-        			<!-- register box on right side -->
-        			<div>
-        				<h2>No account yet ?</h2>
-        				<a href="<?php echo Config::get('URL'); ?>register/index">Register</a>
+        			<div class="right-align">
+        				<a href="<?php echo Config::get('URL'); ?>login/requestPasswordReset">J'ai oublié mon ot de passe</a>
         			</div>
-
         		</div>
-        	</div>
-        </div>
+
+        		<!-- register box on right side -->
+        		<div class="row">
+    				<div class="col s12">
+      					<div class="card blue-grey darken-1">
+        					<div class="card-content white-text">
+        						<span class="card-title">Vous n'avez pas encore de compte ?</span>
+        						<p>
+        							<a href="<?php echo Config::get('URL'); ?>register/index">inscrivez-vous</a>
+        						</p>
+        					</div>
+
+        				</div>
+        			</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</div>
 
 
-         <!--JavaScript at end of body for optimized loading-->
+
+    <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="public/js/materialize.min.js"></script>
