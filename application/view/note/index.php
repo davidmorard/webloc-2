@@ -1,18 +1,16 @@
 <div class="container">
-    <h1>NoteController/index</h1>
-    <div class="box">
+    <h1>Indiquez vos codes postaux</h1>
+    <div>
 
         <!-- echo out the system feedback (error and success messages) -->
         <?php $this->renderFeedbackMessages(); ?>
-
-        <h3>What happens here ?</h3>
         <p>
-            This is just a simple CRUD implementation. Creating, reading, updating and deleting things.
+            Insérez ici les codes postaux sur lesquels vous pouvez intervenir.
         </p>
         <p>
             <form method="post" action="<?php echo Config::get('URL');?>note/create">
-                <label>Text of new note: </label><input type="text" name="note_text" />
-                <input type="submit" value='Create this note' autocomplete="off" />
+                <label>Code postal</label><input type="text" name="note_text" />
+                <input class="waves-effect waves-light btn" type="submit" value='Validez' autocomplete="off" />
             </form>
         </p>
 
@@ -20,25 +18,25 @@
             <table class="note-table">
                 <thead>
                 <tr>
-                    <td>Id</td>
-                    <td>Note</td>
-                    <td>EDIT</td>
-                    <td>DELETE</td>
+                    <!-- <td>Id</td> -->
+                    <td>Codes postaux</td>
+                    <td>Modifier</td>
+                    <td>Suprimer</td>
                 </tr>
                 </thead>
                 <tbody>
                     <?php foreach($this->notes as $key => $value) { ?>
                         <tr>
-                            <td><?= $value->note_id; ?></td>
+                            <!-- <td><?= $value->note_id; ?></td> -->
                             <td><?= htmlentities($value->note_text); ?></td>
-                            <td><a href="<?= Config::get('URL') . 'note/edit/' . $value->note_id; ?>">Edit</a></td>
-                            <td><a href="<?= Config::get('URL') . 'note/delete/' . $value->note_id; ?>">Delete</a></td>
+                            <td><a href="<?= Config::get('URL') . 'note/edit/' . $value->note_id; ?>">Modifier</a></td>
+                            <td><a href="<?= Config::get('URL') . 'note/delete/' . $value->note_id; ?>">Supprimer</a></td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
             <?php } else { ?>
-                <div>No notes yet. Create some !</div>
+                <div>Vous n'avez pas encore de zone d'intervention. Indiquez au moins un code postal !</div>
             <?php } ?>
     </div>
 </div>

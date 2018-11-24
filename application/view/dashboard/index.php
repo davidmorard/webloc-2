@@ -1,15 +1,16 @@
 <div class="container">
-    <h1>DashboardController/index</h1>
-    <div class="box">
-
-        <!-- echo out the system feedback (error and success messages) -->
-        <?php $this->renderFeedbackMessages(); ?>
-
-        <h3>What happens here ?</h3>
-        <p>
-            TEst de commit This is an area that's only visible for logged in users. Try to log out, an go to /dashboard/ again. You'll
-            be redirected to /index/ as you are not logged in. You can protect a whole section in your app within the
-            according controller by placing <i>Auth::handleLogin();</i> into the constructor.
-        <p>
-    </div>
+	<div class="row">
+		<div class="col s12">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">Comment ça marche ?</span>
+					<p>Il vous suffit d'indiquer les codes postaux sur lesquels vous pouvez intervenir.</p>
+					<p>Des gestionnaires d'hébergement se trouvent à proximité. Dès que l'un d'entre aura besoin de vos services, nous vous mettrons en relation.</p>
+				</div>
+				<div class="card-action">
+					<a href="<?php echo Config::get('URL'); ?>note/index">Mettez à jour vos codes postaux</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

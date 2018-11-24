@@ -22,6 +22,7 @@
 				<div class="card">
 					<div class="card-image">
 						<img src="https://www.web-loc.com/images/hand-shake.jpg">
+						
 						<span class="card-title"></span>
 					</div>
 					<div class="card-content">
