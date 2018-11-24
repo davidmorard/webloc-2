@@ -6,8 +6,8 @@
  * Could be extended to i18n etc.
  */
 return array(
-    "FEEDBACK_UNKNOWN_ERROR" => "Unknown error occurred!",
-    "FEEDBACK_DELETED" => "Your account has been deleted.",
+    "FEEDBACK_UNKNOWN_ERROR" => "Erreur inconnue !",
+    "FEEDBACK_DELETED" => "Votre compte a été supprimé.",
     "FEEDBACK_ACCOUNT_SUSPENDED" => "Account Suspended for ",
     "FEEDBACK_ACCOUNT_SUSPENSION_DELETION_STATUS" => "This user's suspension / deletion status has been edited.",
     "FEEDBACK_ACCOUNT_CANT_DELETE_SUSPEND_OWN" => "You can not delete or suspend your own account.",
@@ -42,7 +42,7 @@ return array(
     "FEEDBACK_VERIFICATION_MAIL_SENDING_FAILED" => "Sorry, we could not send you an verification mail. Your account has NOT been created.",
     "FEEDBACK_ACCOUNT_CREATION_FAILED" => "Sorry, your registration failed. Please go back and try again.",
     "FEEDBACK_VERIFICATION_MAIL_SENDING_ERROR" => "Verification mail could not be sent due to: ",
-    "FEEDBACK_VERIFICATION_MAIL_SENDING_SUCCESSFUL" => "A verification mail has been sent successfully.",
+    "FEEDBACK_VERIFICATION_MAIL_SENDING_SUCCESSFUL" => "L'email de vérification a été envoyé avec succès.",
     "FEEDBACK_ACCOUNT_ACTIVATION_SUCCESSFUL" => "Activation was successful! You can now log in.",
     "FEEDBACK_ACCOUNT_ACTIVATION_FAILED" => "Sorry, no such id/verification code combination here! It might be possible that your mail provider (Yahoo? Hotmail?) automatically visits links in emails for anti-scam scanning, so this activation link might been clicked without your action. Please try to log in on the main page.",
     "FEEDBACK_AVATAR_UPLOAD_SUCCESSFUL" => "Avatar upload was successful.",

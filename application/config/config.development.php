@@ -144,13 +144,13 @@ return array(
      * Configuration for: Email content data
      */
     'EMAIL_PASSWORD_RESET_URL' => 'login/verifypasswordreset',
-    'EMAIL_PASSWORD_RESET_FROM_EMAIL' => 'no-reply@example.com',
-    'EMAIL_PASSWORD_RESET_FROM_NAME' => 'My Project',
-    'EMAIL_PASSWORD_RESET_SUBJECT' => 'Password reset for PROJECT XY',
-    'EMAIL_PASSWORD_RESET_CONTENT' => 'Please click on this link to reset your password: ',
+    'EMAIL_PASSWORD_RESET_FROM_EMAIL' => 'no-reply@dmsd.biz.com',
+    'EMAIL_PASSWORD_RESET_FROM_NAME' => 'Webloc',
+    'EMAIL_PASSWORD_RESET_SUBJECT' => 'Ré-initialisation de votre mot de passe Webloc',
+    'EMAIL_PASSWORD_RESET_CONTENT' => 'Cliquez sur le lien pour ré-initialiser votre mot de passe : ',
     'EMAIL_VERIFICATION_URL' => 'register/verify',
     'EMAIL_VERIFICATION_FROM_EMAIL' => 'no-reply@dmsd.biz',
-    'EMAIL_VERIFICATION_FROM_NAME' => 'My Project',
-    'EMAIL_VERIFICATION_SUBJECT' => 'Account activation for PROJECT XY',
-    'EMAIL_VERIFICATION_CONTENT' => 'Please click on this link to activate your account: ',
+    'EMAIL_VERIFICATION_FROM_NAME' => 'Webloc',
+    'EMAIL_VERIFICATION_SUBJECT' => 'Activation du compte Webloc',
+    'EMAIL_VERIFICATION_CONTENT' => 'Cliquez sur le lien pour activer votre compte Webloc : ',
 );

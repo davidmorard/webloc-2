@@ -22,7 +22,7 @@
 				<div class="card">
 					<div class="card-image">
 						<img src="https://www.web-loc.com/images/hand-shake.jpg">
-						<span class="card-title">Gérez des hébergements en location de courte durée.</span>
+						<span class="card-title"></span>
 					</div>
 					<div class="card-content">
 						<p>Vous avez de la disponiblité.</p>
