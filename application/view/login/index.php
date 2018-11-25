@@ -3,35 +3,44 @@
 	<!-- echo out the system feedback (error and success messages) -->
 	<?php $this->renderFeedbackMessages(); ?>
 
-	<div>
-		<div>
+	
 
-			<!-- login box on left side -->
-			<div>
-				<h3>Identifiez-vous</h3>
-				<div>
-					<form action="<?php echo Config::get('URL'); ?>login/login" method="post">
 
-						<div class="row">
-							<div class="col s12">
-								<div class="row">
-									<div class="input-field col s12">
-										<input type="text" name="user_name" placeholder="Pseudo ou email" required/>
+	<!-- login box on left side -->
+
+
+
+
+
+	<div class="row">
+		<div class="col s12">
+			<div class="card darken-1">
+				<div class="card-content">
+					<span class="card-title">Identifiez-vous</span>
+
+					<div>
+						<form action="<?php echo Config::get('URL'); ?>login/login" method="post">
+
+							<div class="row">
+								<div class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<input type="text" name="user_name" placeholder="Pseudo ou email" required/>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="col s12">
-								<div class="row">
-									<div class="input-field col s12">
-										<input type="password" name="user_password" placeholder="Mot de passe" required />
+							<div class="row">
+								<div class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<input type="password" name="user_password" placeholder="Mot de passe" required />
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="right-align">
+							<div class="right-align">
 
 						 <!-- 
 						<label for="set_remember_me_cookie">
@@ -58,28 +67,32 @@
         					</div>
         				</form>
         			</div>
+
         			<p>
         				<div class="right-align">
         					<a href="<?php echo Config::get('URL'); ?>login/requestPasswordReset">J'ai oublié mon ot de passe</a>
         				</div>
         			</p>
+
         		</div>
 
-        		<!-- register box on right side -->
-        		<div class="row">
-        			<div class="col s12">
-        				<div class="card blue-grey darken-1">
-        					<div class="card-content white-text">
-        						<span class="card-title">Vous n'avez pas encore de compte ?</span>
-        						<p>
-        							<a href="<?php echo Config::get('URL'); ?>register/index">inscrivez-vous</a>
-        						</p>
-        					</div>
+        	</div>
 
+
+        	<!-- register box on right side -->
+        	<div class="row">
+        		<div class="col s12">
+        			<div class="card darken-1">
+        				<div class="card-content">
+        					<span class="card-title">Vous n'avez pas encore de compte ?</span>
+        					<p>
+        						<a href="<?php echo Config::get('URL'); ?>register/index">inscrivez-vous</a>
+        					</p>
         				</div>
         			</div>
         		</div>
         	</div>
+
         </div>
     </div>
 </div>
