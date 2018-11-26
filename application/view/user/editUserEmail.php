@@ -15,7 +15,7 @@
 							Inscrivez votre nouvel email : <input type="text" name="user_email" required />
 						</label>
 						
-							<input class="waves-effect waves-light btn" type="submit" value="Submit" />
+							<input class="waves-effect waves-light btn" type="submit" value="Validez" />
 					</form>		
 				</div>
 			</div>

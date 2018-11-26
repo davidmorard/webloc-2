@@ -19,7 +19,7 @@
 						</label>
 						<!-- set CSRF token at the end of the form -->
 						<input type="hidden" name="csrf_token" value="<?= Csrf::makeToken(); ?>" />
-						<input class="waves-effect waves-light btn" type="submit" value="Submit" />
+						<input class="waves-effect waves-light btn" type="submit" value="Validez" />
 					</form>
 
 

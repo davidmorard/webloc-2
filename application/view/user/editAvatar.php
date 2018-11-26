@@ -29,7 +29,7 @@
                         <div class="card-action">
                             <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                         
-                            <input class="waves-effect waves-light btn" type="submit" value="Upload image" />
+                            <input class="waves-effect waves-light btn" type="submit" value="Validez" />
                         </div>
                         
                     </form>

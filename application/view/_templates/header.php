@@ -26,11 +26,11 @@
                     </li>
 
 
-                    <li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
+                    <!--<li <?php if (View::checkForActiveController($filename, "profile")) { echo ' class="active" '; } ?> >
                         <a href="<?php echo Config::get('URL'); ?>profile/index">
                             Profiles
                         </a>
-                    </li>
+                    </li>-->
                     
                     <?php if (Session::userIsLoggedIn()) { ?>
 
