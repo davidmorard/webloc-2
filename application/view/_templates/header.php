@@ -75,7 +75,7 @@
                 <?php if (Session::userIsLoggedIn()) : ?>
                     <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
                         <a href="<?php echo Config::get('URL'); ?>user/index" class="collection-item">
-                            Mon compte
+                            <h4>Mon compte</h4>
                         </a>
                         <ul>
                             <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >

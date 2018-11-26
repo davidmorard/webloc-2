@@ -12,11 +12,11 @@
 					<p>Cliquez sur le bouton pour modifier votre statut.</p>
 				</div>
 				<div class="card-action">
-					<form action="<?php echo Config::get('URL'); ?>user/changeUserRole_action" method="post">
+					<form action="<?php echo Config::get('URL'); ?>user/changeUserRole_action" method="post">Vous êtes 
 						<?php if (Session::get('user_account_type') == 1) { ?>
-							<input class="waves-effect waves-light btn" type="submit" name="user_account_upgrade" value="Vous êtes réceptionniste, cliquez pour devenir logeur" />
+							<input class="waves-effect waves-light btn" type="submit" name="user_account_upgrade" value="réceptionniste" /> cliquez pour changer !
 						<?php } else if (Session::get('user_account_type') == 2) { ?>
-							<input class="waves-effect waves-light btn" type="submit" name="user_account_downgrade" value="Vous êtes logeur, cliquez pour devenir réceptionniste" />
+							<input class="waves-effect waves-light btn" type="submit" name="user_account_downgrade" value="logeur" /> cliquez pour changer !
 						<?php } ?>
 					</form>
 				</div>

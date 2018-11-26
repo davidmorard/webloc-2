@@ -10,7 +10,11 @@
 			<div class="card darken-1">
 				<div class="card-content">
 					<span class="card-title">Indiquez vos codes postaux</span>
-					<p>Insérez ici les codes postaux d'intervention.</p>
+					<div>
+						<p>Insérez ici les codes postaux d'intervention.</p>
+						<p>Si vous êtes réceptionniste, indiquez les lieux sur lesquels vous êtes disponible. Il suffit d'insérer les codes postaux de vos zone d'intervention.</p>
+						<p>Si vous êtes logeur, indiquez les codes postaux des hébergements.</p>
+					</div>
 				</div>
 				<div class="card-action">
 					<p>
