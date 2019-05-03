@@ -16,7 +16,7 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="index.php" class="brand-logo hide-on-med-and-down">Webloc</a>
+                <a href="index/index.php" class="brand-logo hide-on-med-and-down">Webloc</a>
 
                 <ul id="nav-mobile" class="right ">
                     <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?> >

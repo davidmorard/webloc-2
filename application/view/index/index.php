@@ -19,7 +19,7 @@
 			<div class="col l6 s12">
                 <div class="card">
                     <div class="card-image">
-						<img src="https://www.web-loc.com/images/hand-shake.jpg">
+						<img src="https://gites-barcelonnette.com/img/hand-shake.jpg">
 						
 						<span class="card-title"></span>
 					</div>
@@ -37,7 +37,7 @@
             <div class="col l6 s12">
                 <div class="card">
                     <div class="card-image">
-						<img src="https://www.web-loc.com/images/good-job.jpg">
+						<img src="https://gites-barcelonnette.com/img/good-job.jpg">
 						
 						<span class="card-title"></span>
 					</div>
@@ -54,4 +54,6 @@
 		</div>
 
 	</div>
+
+
 </div>
